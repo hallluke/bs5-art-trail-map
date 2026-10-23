@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+<style>
+    .leaflet-control-layers {font-size: 14px;}
+    .leaflet-control-layers label {font-size: 14px;}
+    .leaflet-tooltip {font-size: 12px !important;}
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13caa042e06f007057b0e50847d7ba12 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_13caa042e06f007057b0e50847d7ba12" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_13caa042e06f007057b0e50847d7ba12 = L.map(
+                "map_13caa042e06f007057b0e50847d7ba12",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+51.451546619999995,
+-2.5712490999999997,
+],
+[
+51.482924870000005,
+-2.5348059000000003,
+],
+],
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_13caa042e06f007057b0e50847d7ba12);
+
+            
+
+        
+    
+            var tile_layer_1a798bf1465cdb97d1fc2a5da7d2384a = L.tileLayer(
+                "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_2l12_1_aecfbd797074ed99ab875f85",
+                {
+  "minZoom": 15,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1a798bf1465cdb97d1fc2a5da7d2384a.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+            var feature_group_b7f109219c6cf6a95db78ab200947c88 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4fa2b97a4a45c4fe91c451e4035aceba = L.marker(
+                [51.4664919, -2.554541],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+            var icon_d9a59e0ec140ca0c389ea0bcb921bad9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f906d19328ce7a814db51c8600e0d12 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_df548c2bce9e9d40ed75ac9de7817e8b = $(`<div id="html_df548c2bce9e9d40ed75ac9de7817e8b" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 1: 7 Bruce Cole Lane</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Val Stephenson</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 7 Bruce Cole Lane, BS5 6FN</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>I do not travel far. Celebrating the small beautiful moments in life in paintings and drawings.</i></p>     </div>`)[0];
+                popup_1f906d19328ce7a814db51c8600e0d12.setContent(html_df548c2bce9e9d40ed75ac9de7817e8b);
+            
+        
+
+        marker_4fa2b97a4a45c4fe91c451e4035aceba.bindPopup(popup_1f906d19328ce7a814db51c8600e0d12)
+        ;
+
+        
+    
+    
+            marker_4fa2b97a4a45c4fe91c451e4035aceba.bindTooltip(
+                `<div>
+                     1: 7 Bruce Cole Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fa2b97a4a45c4fe91c451e4035aceba.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_4ef16c15d166b062a4a4ab96aa068225 = L.marker(
+                [51.4665962, -2.5557196],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_fcc6b3e81a6b6b75ab63b55178f8ca9e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_435a49bf3d32e664e13c1b383c3b8656 = $(`<div id="html_435a49bf3d32e664e13c1b383c3b8656" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 2: 60 Carlyle Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Gil Rendle</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 60 Carlyle Road, BS5 6HH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Functional bowls, plates and vases, wheel-thrown and hand built, with two distinct styles: bold geometric decoration and organic forms finished in rich, natural glazes. Also, small creatures!</i></p>     </div>`)[0];
+                popup_fcc6b3e81a6b6b75ab63b55178f8ca9e.setContent(html_435a49bf3d32e664e13c1b383c3b8656);
+            
+        
+
+        marker_4ef16c15d166b062a4a4ab96aa068225.bindPopup(popup_fcc6b3e81a6b6b75ab63b55178f8ca9e)
+        ;
+
+        
+    
+    
+            marker_4ef16c15d166b062a4a4ab96aa068225.bindTooltip(
+                `<div>
+                     2: 60 Carlyle Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ef16c15d166b062a4a4ab96aa068225.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_fbd73b60029ff172a6970edcff8d11bb = L.marker(
+                [51.4659495, -2.5561645],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_6d0ec375335d5dfcf3e290e5c0d314b3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_037ed2dd32988fabbf49283e8eeecf6c = $(`<div id="html_037ed2dd32988fabbf49283e8eeecf6c" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 3: 25 Gratitude Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> HBF Ceramics</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 25 Gratitude Road, BS5 6EH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Handcrafted terracotta slipware for everyday use, each piece hand decorated using oxides, finished with a food-safe glaze. Unique items: bowls, mugs, jugs, fermentation jars, serving dishes and more.</i></p>     </div>`)[0];
+                popup_6d0ec375335d5dfcf3e290e5c0d314b3.setContent(html_037ed2dd32988fabbf49283e8eeecf6c);
+            
+        
+
+        marker_fbd73b60029ff172a6970edcff8d11bb.bindPopup(popup_6d0ec375335d5dfcf3e290e5c0d314b3)
+        ;
+
+        
+    
+    
+            marker_fbd73b60029ff172a6970edcff8d11bb.bindTooltip(
+                `<div>
+                     3: 25 Gratitude Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbd73b60029ff172a6970edcff8d11bb.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_2a3969ff4cf7a6bc4f6ae8e41d57e49c = L.marker(
+                [51.46544106, -2.556129046],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_9575a579b778944e2499ac5abc4bbc2a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_346df537f5b3a29bc5d2dc6067b7d6b4 = $(`<div id="html_346df537f5b3a29bc5d2dc6067b7d6b4" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 4: 17 Bruce Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Ground Floor Group</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 17 Bruce Road, BS5 6EE</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>3 artists in one flat; look into their playful worlds of tender analogue photos, sentimental screenprints & hand-drawn life snippets. Theopolitans Pizza will be serving slices, grab whilst you can.</i></p>     </div>`)[0];
+                popup_9575a579b778944e2499ac5abc4bbc2a.setContent(html_346df537f5b3a29bc5d2dc6067b7d6b4);
+            
+        
+
+        marker_2a3969ff4cf7a6bc4f6ae8e41d57e49c.bindPopup(popup_9575a579b778944e2499ac5abc4bbc2a)
+        ;
+
+        
+    
+    
+            marker_2a3969ff4cf7a6bc4f6ae8e41d57e49c.bindTooltip(
+                `<div>
+                     4: 17 Bruce Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a3969ff4cf7a6bc4f6ae8e41d57e49c.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_e45775ebff9c8808378b9da13e12ba81 = L.marker(
+                [51.4656727, -2.5577922],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_6c7459521b27a74f5c2aab542edfec93 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bfb56772d9286f93a3b959bdd0a7ac67 = $(`<div id="html_bfb56772d9286f93a3b959bdd0a7ac67" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 6: 124 Devon Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Greenbank Pottery</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 124 Devon Road, BS5 6ED</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>A balance of chaotic and calm, my single fired, kick-wheel thrown ceramics are inspired by nature and sustainability. I work in gentle colours to make pots that are tactile, grounding and practical.</i></p>     </div>`)[0];
+                popup_6c7459521b27a74f5c2aab542edfec93.setContent(html_bfb56772d9286f93a3b959bdd0a7ac67);
+            
+        
+
+        marker_e45775ebff9c8808378b9da13e12ba81.bindPopup(popup_6c7459521b27a74f5c2aab542edfec93)
+        ;
+
+        
+    
+    
+            marker_e45775ebff9c8808378b9da13e12ba81.bindTooltip(
+                `<div>
+                     6: 124 Devon Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e45775ebff9c8808378b9da13e12ba81.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_14b9275a3145fe213f00ac2b7514822f = L.marker(
+                [51.4676467, -2.557496],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_f8fcc8d9fa1e18aba01ce8bbb33acbcc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bb81f10d8568f9c691cea4da02408bfd = $(`<div id="html_bb81f10d8568f9c691cea4da02408bfd" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 7: 8 Kingsley Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Alipwm Pottery / Wild & Wasted</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 8 Kingsley Road, BS5 6HF</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Ceramics for hospitality & homes.</i></p>     </div>`)[0];
+                popup_f8fcc8d9fa1e18aba01ce8bbb33acbcc.setContent(html_bb81f10d8568f9c691cea4da02408bfd);
+            
+        
+
+        marker_14b9275a3145fe213f00ac2b7514822f.bindPopup(popup_f8fcc8d9fa1e18aba01ce8bbb33acbcc)
+        ;
+
+        
+    
+    
+            marker_14b9275a3145fe213f00ac2b7514822f.bindTooltip(
+                `<div>
+                     7: 8 Kingsley Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14b9275a3145fe213f00ac2b7514822f.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_4c5abe44ebf1c4c504d7f9f1354b3d0a = L.marker(
+                [51.4676292, -2.5586104],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_fbc381f377d9a6487b490ba59ff4b296 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_533dbda69ab3b83b010b88b3615acde0 = $(`<div id="html_533dbda69ab3b83b010b88b3615acde0" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 10: 4 Hinton Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Alison E Moffett</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 4 Hinton Road, BS5 6HB</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Whimsical colourful handmade lights, and illustrations.</i></p>     </div>`)[0];
+                popup_fbc381f377d9a6487b490ba59ff4b296.setContent(html_533dbda69ab3b83b010b88b3615acde0);
+            
+        
+
+        marker_4c5abe44ebf1c4c504d7f9f1354b3d0a.bindPopup(popup_fbc381f377d9a6487b490ba59ff4b296)
+        ;
+
+        
+    
+    
+            marker_4c5abe44ebf1c4c504d7f9f1354b3d0a.bindTooltip(
+                `<div>
+                     10: 4 Hinton Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c5abe44ebf1c4c504d7f9f1354b3d0a.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_e65d8827259e7ce20b7e1e84987f402e = L.marker(
+                [51.4633104, -2.5658094],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_7cca78f7dda0400ecc86be4fbc4e6f6a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c2f25c12700c4f1742788b73b9fef2fc = $(`<div id="html_c2f25c12700c4f1742788b73b9fef2fc" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 11: 23 Eastbourne Road, Easton</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Jennie Cave</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 23 Eastbourne Road, Easton, BS5 0HN</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>I make retro surreal montages including prints, cards and little shrines.</i></p>     </div>`)[0];
+                popup_7cca78f7dda0400ecc86be4fbc4e6f6a.setContent(html_c2f25c12700c4f1742788b73b9fef2fc);
+            
+        
+
+        marker_e65d8827259e7ce20b7e1e84987f402e.bindPopup(popup_7cca78f7dda0400ecc86be4fbc4e6f6a)
+        ;
+
+        
+    
+    
+            marker_e65d8827259e7ce20b7e1e84987f402e.bindTooltip(
+                `<div>
+                     11: 23 Eastbourne Road, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e65d8827259e7ce20b7e1e84987f402e.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_29f8ba14899d9b34f6c738db5bda7858 = L.marker(
+                [51.4657888, -2.5659474],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_d6a4f0c98799db8bfa81115e2030844c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6f8b5b45c50c05897f8a696c0fcb8fde = $(`<div id="html_6f8b5b45c50c05897f8a696c0fcb8fde" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 13: 14 Lawrence Avenue, Easton</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> object...</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 14 Lawrence Avenue, Easton, BS5 0LE</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>object... is a multi-media visual artist, working from intricate collages to large-scale street art. They also make zines, stickers, badges, notebooks of waste paper, and screen prints.</i></p>     </div>`)[0];
+                popup_d6a4f0c98799db8bfa81115e2030844c.setContent(html_6f8b5b45c50c05897f8a696c0fcb8fde);
+            
+        
+
+        marker_29f8ba14899d9b34f6c738db5bda7858.bindPopup(popup_d6a4f0c98799db8bfa81115e2030844c)
+        ;
+
+        
+    
+    
+            marker_29f8ba14899d9b34f6c738db5bda7858.bindTooltip(
+                `<div>
+                     13: 14 Lawrence Avenue, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29f8ba14899d9b34f6c738db5bda7858.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_408131cc12c02e8ec3961a20611b8e9d = L.marker(
+                [51.4651793, -2.5696491],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_1f8d5103fddcc237665821121d68f118 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2cf494115e28220a08b77033ec9f627a = $(`<div id="html_2cf494115e28220a08b77033ec9f627a" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 15: 246B Stapleton Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Drift and Art</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 246B Stapleton Road, BS5 0NT</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Where the Ocean inspires Art. Handmade driftwood mirrors. Mixed media artworks including sea glass.</i></p>     </div>`)[0];
+                popup_1f8d5103fddcc237665821121d68f118.setContent(html_2cf494115e28220a08b77033ec9f627a);
+            
+        
+
+        marker_408131cc12c02e8ec3961a20611b8e9d.bindPopup(popup_1f8d5103fddcc237665821121d68f118)
+        ;
+
+        
+    
+    
+            marker_408131cc12c02e8ec3961a20611b8e9d.bindTooltip(
+                `<div>
+                     15: 246B Stapleton Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_408131cc12c02e8ec3961a20611b8e9d.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_fe3b769aa3f655c6c63afdb18d729192 = L.marker(
+                [51.4663918, -2.5602953],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_f98828f358acbcf2e1aa383f3a90f71a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c930b1c8492ff09275bf9d7d2dea140c = $(`<div id="html_c930b1c8492ff09275bf9d7d2dea140c" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 22: 19 Tudor Road, Easton</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Beck Slater</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 19 Tudor Road, Easton, BS5 6BN</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Colourful collages, screen prints and work in progress from a project involving letterpress and drawing into photos of road signs, family and everyday things.</i></p>     </div>`)[0];
+                popup_f98828f358acbcf2e1aa383f3a90f71a.setContent(html_c930b1c8492ff09275bf9d7d2dea140c);
+            
+        
+
+        marker_fe3b769aa3f655c6c63afdb18d729192.bindPopup(popup_f98828f358acbcf2e1aa383f3a90f71a)
+        ;
+
+        
+    
+    
+            marker_fe3b769aa3f655c6c63afdb18d729192.bindTooltip(
+                `<div>
+                     22: 19 Tudor Road, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe3b769aa3f655c6c63afdb18d729192.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_aaa5793d9ef9a16b9311975e106d72a5 = L.marker(
+                [51.4644501, -2.5616802],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_27836fe9cd3e10e81b12d51a307d914e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c603ec78b5fe078ccc6ae761be88d10e = $(`<div id="html_c603ec78b5fe078ccc6ae761be88d10e" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 25: 31 Bloy Street</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Katy Spencer; Madeleine Town</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 31 Bloy Street, BS4 6AX</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Katy Spencer — drawings and handmade prints on nature, landscape and the environment, inspired by the South West Coast Path. Madeleine Town — original paintings in pastel, oil, acrylic and watercolour, often figures in landscape, the cosmos and wild things.</i></p>     </div>`)[0];
+                popup_27836fe9cd3e10e81b12d51a307d914e.setContent(html_c603ec78b5fe078ccc6ae761be88d10e);
+            
+        
+
+        marker_aaa5793d9ef9a16b9311975e106d72a5.bindPopup(popup_27836fe9cd3e10e81b12d51a307d914e)
+        ;
+
+        
+    
+    
+            marker_aaa5793d9ef9a16b9311975e106d72a5.bindTooltip(
+                `<div>
+                     25: 31 Bloy Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aaa5793d9ef9a16b9311975e106d72a5.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_79dfec6a4fd7536c07dbb36e90c01457 = L.marker(
+                [51.4632077, -2.5628301],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_e10b3e9b8f64c9286f5a5eabf3dd28c4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_740a1ac3ca77699689c80f0e6b3984f5 = $(`<div id="html_740a1ac3ca77699689c80f0e6b3984f5" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 26: 28 Chelsea Rd, Easton</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Kat Poole; KL Ceramics</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 28 Chelsea Rd, Easton, BS5 6AF</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Kat Poole — abstract painter working with layers of subconscious imagery and earth pigments. KL Ceramics — handmade wheel-thrown pottery inspired by nature and organic shapes, colours and textures.</i></p>     </div>`)[0];
+                popup_e10b3e9b8f64c9286f5a5eabf3dd28c4.setContent(html_740a1ac3ca77699689c80f0e6b3984f5);
+            
+        
+
+        marker_79dfec6a4fd7536c07dbb36e90c01457.bindPopup(popup_e10b3e9b8f64c9286f5a5eabf3dd28c4)
+        ;
+
+        
+    
+    
+            marker_79dfec6a4fd7536c07dbb36e90c01457.bindTooltip(
+                `<div>
+                     26: 28 Chelsea Rd, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79dfec6a4fd7536c07dbb36e90c01457.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_9c3aabe54f14d343d483dce37f003e2c = L.marker(
+                [51.45931271, -2.552954273],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_01b11d2275f32c9c2ef8e9f850180ab9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c2ec80a82221faef160c27d3c9dd87d7 = $(`<div id="html_c2ec80a82221faef160c27d3c9dd87d7" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 32: 1A Barnes Street, St George</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> MR Takuan Sohos’s Acid Dream Garden</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 1A Barnes Street, St George, BS5 9HB</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Colourful paintings in frames and on cotton rag paper.</i></p>     </div>`)[0];
+                popup_01b11d2275f32c9c2ef8e9f850180ab9.setContent(html_c2ec80a82221faef160c27d3c9dd87d7);
+            
+        
+
+        marker_9c3aabe54f14d343d483dce37f003e2c.bindPopup(popup_01b11d2275f32c9c2ef8e9f850180ab9)
+        ;
+
+        
+    
+    
+            marker_9c3aabe54f14d343d483dce37f003e2c.bindTooltip(
+                `<div>
+                     32: 1A Barnes Street, St George
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c3aabe54f14d343d483dce37f003e2c.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_462a4c2eecf8924c93b1e6ccf2db0ae9 = L.marker(
+                [51.4598037, -2.546219],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_5915d086d4f8dd2d7082f356a622d69e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3f8bd3afe3e90b53081bc65d4a7a7ca0 = $(`<div id="html_3f8bd3afe3e90b53081bc65d4a7a7ca0" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 35: 294 Church Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Finnerty Ceramics</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 294 Church Road, BS5 8AH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Rebecca is an Irish ceramicist based in Bristol, handcrafting wheel-thrown tableware and homeware with care and intention.</i></p>     </div>`)[0];
+                popup_5915d086d4f8dd2d7082f356a622d69e.setContent(html_3f8bd3afe3e90b53081bc65d4a7a7ca0);
+            
+        
+
+        marker_462a4c2eecf8924c93b1e6ccf2db0ae9.bindPopup(popup_5915d086d4f8dd2d7082f356a622d69e)
+        ;
+
+        
+    
+    
+            marker_462a4c2eecf8924c93b1e6ccf2db0ae9.bindTooltip(
+                `<div>
+                     35: 294 Church Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_462a4c2eecf8924c93b1e6ccf2db0ae9.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_b4589f7914a8fe0540fcfde326ed30d7 = L.marker(
+                [51.4598182, -2.5400177],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_05bcdd02e9e69a826a09d891516043ab = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2e6fefb5a33f3408687797f839343809 = $(`<div id="html_2e6fefb5a33f3408687797f839343809" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 36: 8 The Avenue, St George</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Catherine Parkinson Mosaics</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 8 The Avenue, St George, BS5 8HW</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Artist working in the mosaic medium.</i></p>     </div>`)[0];
+                popup_05bcdd02e9e69a826a09d891516043ab.setContent(html_2e6fefb5a33f3408687797f839343809);
+            
+        
+
+        marker_b4589f7914a8fe0540fcfde326ed30d7.bindPopup(popup_05bcdd02e9e69a826a09d891516043ab)
+        ;
+
+        
+    
+    
+            marker_b4589f7914a8fe0540fcfde326ed30d7.bindTooltip(
+                `<div>
+                     36: 8 The Avenue, St George
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4589f7914a8fe0540fcfde326ed30d7.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_98729d329e26e3b885741b85b18c51d2 = L.marker(
+                [51.4627048, -2.5364059],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_9331416d55c83d520937c5156a7f1fbd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b3a66723d1eb0510223e61f984a365a7 = $(`<div id="html_b3a66723d1eb0510223e61f984a365a7" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 37: 11 Shelley Close</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> The Cupboard Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 11 Shelley Close, BS5 7HQ</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Museum worker, printmaker and general crafter. Small-scale prints focus on archaeology, social history and natural history; works from a cupboard studio.</i></p>     </div>`)[0];
+                popup_9331416d55c83d520937c5156a7f1fbd.setContent(html_b3a66723d1eb0510223e61f984a365a7);
+            
+        
+
+        marker_98729d329e26e3b885741b85b18c51d2.bindPopup(popup_9331416d55c83d520937c5156a7f1fbd)
+        ;
+
+        
+    
+    
+            marker_98729d329e26e3b885741b85b18c51d2.bindTooltip(
+                `<div>
+                     37: 11 Shelley Close
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98729d329e26e3b885741b85b18c51d2.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_952cd24b6155e27ea43487836d83e980 = L.marker(
+                [51.46172472, -2.540503708],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_4bcd570c9e6b6fce3cd1c14a3da73b93 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5db7170a5afa3e0b08216a447115e300 = $(`<div id="html_5db7170a5afa3e0b08216a447115e300" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 38: 5 Frost & Reed House, Albert Grove South</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> George Varney</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 5 Frost & Reed House, Albert Grove South, BS5 7HU</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Landscapes in Oil.</i></p>     </div>`)[0];
+                popup_4bcd570c9e6b6fce3cd1c14a3da73b93.setContent(html_5db7170a5afa3e0b08216a447115e300);
+            
+        
+
+        marker_952cd24b6155e27ea43487836d83e980.bindPopup(popup_4bcd570c9e6b6fce3cd1c14a3da73b93)
+        ;
+
+        
+    
+    
+            marker_952cd24b6155e27ea43487836d83e980.bindTooltip(
+                `<div>
+                     38: 5 Frost & Reed House, Albert Grove South
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_952cd24b6155e27ea43487836d83e980.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_ddb81434c4cf51e280516b5f21f3a750 = L.marker(
+                [51.4634798, -2.5443967],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_f60ec016ce31775a55f23e4d0f469a6a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_503a9e8af22dc5042dabb129bc393f2c = $(`<div id="html_503a9e8af22dc5042dabb129bc393f2c" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 39: 22 Howard Ave</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Sophie Alda Studio & Lyn Ang Ceramics</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 22 Howard Ave, BS5 7BB</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Shared studio of two ceramic artists, one with an illustration background and one with an architecture background, bringing these disciplines into their pots.</i></p>     </div>`)[0];
+                popup_f60ec016ce31775a55f23e4d0f469a6a.setContent(html_503a9e8af22dc5042dabb129bc393f2c);
+            
+        
+
+        marker_ddb81434c4cf51e280516b5f21f3a750.bindPopup(popup_f60ec016ce31775a55f23e4d0f469a6a)
+        ;
+
+        
+    
+    
+            marker_ddb81434c4cf51e280516b5f21f3a750.bindTooltip(
+                `<div>
+                     39: 22 Howard Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ddb81434c4cf51e280516b5f21f3a750.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_2954a9a7a021ab5d1ce908d528a283c8 = L.marker(
+                [51.4642137, -2.5445689],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_032aefb40f4bc3dfa381ac51de46e692 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6bf9ec4b89eb974f4accdf8798f8b774 = $(`<div id="html_6bf9ec4b89eb974f4accdf8798f8b774" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 40: 20 Whitehall Ave</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Nadia Taylor</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 20 Whitehall Ave, BS5 7DF</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Designer, illustrator and ceramicist whose colourful work is filled with bold shapes and striking pattern.</i></p>     </div>`)[0];
+                popup_032aefb40f4bc3dfa381ac51de46e692.setContent(html_6bf9ec4b89eb974f4accdf8798f8b774);
+            
+        
+
+        marker_2954a9a7a021ab5d1ce908d528a283c8.bindPopup(popup_032aefb40f4bc3dfa381ac51de46e692)
+        ;
+
+        
+    
+    
+            marker_2954a9a7a021ab5d1ce908d528a283c8.bindTooltip(
+                `<div>
+                     40: 20 Whitehall Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2954a9a7a021ab5d1ce908d528a283c8.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_f1c937bf1716f3becfc4ff6eb630c571 = L.marker(
+                [51.4632295, -2.5457734],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_a38d5284aaa1245012cc57780cf59294 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3bb00ad4a3c666d379877691bc89c674 = $(`<div id="html_3bb00ad4a3c666d379877691bc89c674" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 41: 44 Park Crescent</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Veronica Brewer</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 44 Park Crescent, BS5 7AY</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Fused glass. Prices to suit all pockets.</i></p>     </div>`)[0];
+                popup_a38d5284aaa1245012cc57780cf59294.setContent(html_3bb00ad4a3c666d379877691bc89c674);
+            
+        
+
+        marker_f1c937bf1716f3becfc4ff6eb630c571.bindPopup(popup_a38d5284aaa1245012cc57780cf59294)
+        ;
+
+        
+    
+    
+            marker_f1c937bf1716f3becfc4ff6eb630c571.bindTooltip(
+                `<div>
+                     41: 44 Park Crescent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f1c937bf1716f3becfc4ff6eb630c571.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_8573e6ed469c9ea72e3ce8d7296ff95d = L.marker(
+                [51.46128111, -2.550771983],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_24dcecafca5781776be7f6af854474d0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b58dcda631fb58f620c52df24becfaaf = $(`<div id="html_b58dcda631fb58f620c52df24becfaaf" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 43: 10 Lyndale Road, St George</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> All Is Sun Eco Creations</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 10 Lyndale Road, St George, BS5 7AA</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Unique handmade nature-inspired eco heritage crafts: beadwork, crochet and reclaimed-leather accessories, jewellery, home décor and slow fashion.</i></p>     </div>`)[0];
+                popup_24dcecafca5781776be7f6af854474d0.setContent(html_b58dcda631fb58f620c52df24becfaaf);
+            
+        
+
+        marker_8573e6ed469c9ea72e3ce8d7296ff95d.bindPopup(popup_24dcecafca5781776be7f6af854474d0)
+        ;
+
+        
+    
+    
+            marker_8573e6ed469c9ea72e3ce8d7296ff95d.bindTooltip(
+                `<div>
+                     43: 10 Lyndale Road, St George
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8573e6ed469c9ea72e3ce8d7296ff95d.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_90859581984e502988889921c7262cbd = L.marker(
+                [51.4604181, -2.5543713],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_1ed51551b48ea0cec3de29588219a3b9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d155796e9066b5d2835b85cac85caea1 = $(`<div id="html_d155796e9066b5d2835b85cac85caea1" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 44: 35 Lyppiatt Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Ellie Bloom Silver; Jessie de Salis; Natalie Whiteland</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 35 Lyppiatt Road, BS5 9HW</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Ellie Bloom Silver — recycled silver jewellery handmade with traditional silversmithing techniques. Jessie de Salis — hand-printed textiles for cushions, lampshades and interiors. Natalie Whiteland — original lino prints inspired by nature, Greek mythology and architecture.</i></p>     </div>`)[0];
+                popup_1ed51551b48ea0cec3de29588219a3b9.setContent(html_d155796e9066b5d2835b85cac85caea1);
+            
+        
+
+        marker_90859581984e502988889921c7262cbd.bindPopup(popup_1ed51551b48ea0cec3de29588219a3b9)
+        ;
+
+        
+    
+    
+            marker_90859581984e502988889921c7262cbd.bindTooltip(
+                `<div>
+                     44: 35 Lyppiatt Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90859581984e502988889921c7262cbd.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_5d4580c1401f390fbdae59bac757c509 = L.marker(
+                [51.460699, -2.5551258],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_4f9ba6f0f3bc8884097911c4786320e9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b216ccfc05bb31a9b0a8fe4643581a73 = $(`<div id="html_b216ccfc05bb31a9b0a8fe4643581a73" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 45: 18 Albert Parade</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Corinne Randall</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 18 Albert Parade, BS5 9EH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Paintings inspired by nature, colour and spirituality; oils, inks and mixed media explore light, pattern and unseen harmonies.</i></p>     </div>`)[0];
+                popup_4f9ba6f0f3bc8884097911c4786320e9.setContent(html_b216ccfc05bb31a9b0a8fe4643581a73);
+            
+        
+
+        marker_5d4580c1401f390fbdae59bac757c509.bindPopup(popup_4f9ba6f0f3bc8884097911c4786320e9)
+        ;
+
+        
+    
+    
+            marker_5d4580c1401f390fbdae59bac757c509.bindTooltip(
+                `<div>
+                     45: 18 Albert Parade
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d4580c1401f390fbdae59bac757c509.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_a59951e8343911b17a0a2e9b7df759d9 = L.marker(
+                [51.4615945, -2.5558053],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_5a53dbe103543027ce3b6fd26b26aa00 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f78cf52d7bbc2b02577e183e122e1f47 = $(`<div id="html_f78cf52d7bbc2b02577e183e122e1f47" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 46: 178 Whitehall Road, Redfield</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Anna Stead & Others</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 178 Whitehall Road, Redfield, BS5 9BP</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Fine-liner and biro mice caught in human activities; acrylic still life; paper-crane ceiling exhibit.</i></p>     </div>`)[0];
+                popup_5a53dbe103543027ce3b6fd26b26aa00.setContent(html_f78cf52d7bbc2b02577e183e122e1f47);
+            
+        
+
+        marker_a59951e8343911b17a0a2e9b7df759d9.bindPopup(popup_5a53dbe103543027ce3b6fd26b26aa00)
+        ;
+
+        
+    
+    
+            marker_a59951e8343911b17a0a2e9b7df759d9.bindTooltip(
+                `<div>
+                     46: 178 Whitehall Road, Redfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a59951e8343911b17a0a2e9b7df759d9.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_c0710c72ca45a38d1b5916891f54448f = L.marker(
+                [51.4625478, -2.5550272],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_2b3c4663a811f50840ee764d1dd04ec0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3e9a53f703964dedb9190c9f9352b2b2 = $(`<div id="html_3e9a53f703964dedb9190c9f9352b2b2" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 47: 4 Poets Close</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> We Don’t Do Chemicals</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 4 Poets Close, BS5 9AE</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Herbal and natural products such as lip balms, body oil, tincture, salves and balms.</i></p>     </div>`)[0];
+                popup_2b3c4663a811f50840ee764d1dd04ec0.setContent(html_3e9a53f703964dedb9190c9f9352b2b2);
+            
+        
+
+        marker_c0710c72ca45a38d1b5916891f54448f.bindPopup(popup_2b3c4663a811f50840ee764d1dd04ec0)
+        ;
+
+        
+    
+    
+            marker_c0710c72ca45a38d1b5916891f54448f.bindTooltip(
+                `<div>
+                     47: 4 Poets Close
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0710c72ca45a38d1b5916891f54448f.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_87fc5685a82d3c5510a311a2eb0aef4e = L.marker(
+                [51.4640749, -2.554403],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_ef3d34275442df0c51f2c8c4d6614b54 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c6f67a29ec88e07e2bb7f41f29b5b155 = $(`<div id="html_c6f67a29ec88e07e2bb7f41f29b5b155" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 48: 26 Woodcroft Avenue</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Amy Vans; Anna Ephgrave Potter</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 26 Woodcroft Avenue, BS5 9AS</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Amy Vans — vibrant abstract paintings. Anna Ephgrave Potter — beautiful, simple and practical stoneware including bowls, mugs, spoon plates and jugs.</i></p>     </div>`)[0];
+                popup_ef3d34275442df0c51f2c8c4d6614b54.setContent(html_c6f67a29ec88e07e2bb7f41f29b5b155);
+            
+        
+
+        marker_87fc5685a82d3c5510a311a2eb0aef4e.bindPopup(popup_ef3d34275442df0c51f2c8c4d6614b54)
+        ;
+
+        
+    
+    
+            marker_87fc5685a82d3c5510a311a2eb0aef4e.bindTooltip(
+                `<div>
+                     48: 26 Woodcroft Avenue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87fc5685a82d3c5510a311a2eb0aef4e.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_d843f8bcaf0ea65b97cc104cf00f9509 = L.marker(
+                [51.4623643, -2.5589753],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_343b8dd60a78379e7cfd0968c6456c1b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_17ff7a753530ed6c3a80353b3eb534c2 = $(`<div id="html_17ff7a753530ed6c3a80353b3eb534c2" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 49: 56 Vicarage Road, Redfield</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Oliver Sidaway</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 56 Vicarage Road, Redfield, BS5 9AF</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Oil paintings and prints of BS5 and other parts of Bristol.</i></p>     </div>`)[0];
+                popup_343b8dd60a78379e7cfd0968c6456c1b.setContent(html_17ff7a753530ed6c3a80353b3eb534c2);
+            
+        
+
+        marker_d843f8bcaf0ea65b97cc104cf00f9509.bindPopup(popup_343b8dd60a78379e7cfd0968c6456c1b)
+        ;
+
+        
+    
+    
+            marker_d843f8bcaf0ea65b97cc104cf00f9509.bindTooltip(
+                `<div>
+                     49: 56 Vicarage Road, Redfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d843f8bcaf0ea65b97cc104cf00f9509.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_f557a0c478d804e6ccf56bb29f7f743f = L.marker(
+                [51.4633141, -2.5622944],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_ffbc8f6825a3ec4b2eff3e29c15a8c60 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_76f4e825a803e85ec7932b9d33c5ecef = $(`<div id="html_76f4e825a803e85ec7932b9d33c5ecef" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 51: 10 Chelsea Park</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Undergrowth CIC</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 10 Chelsea Park, BS5 6AG</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Artist collective creating immersive mixed-arts events that bring communities together through connection to nature, including elaborate costumes, giant puppets and immersive soundscapes.</i></p>     </div>`)[0];
+                popup_ffbc8f6825a3ec4b2eff3e29c15a8c60.setContent(html_76f4e825a803e85ec7932b9d33c5ecef);
+            
+        
+
+        marker_f557a0c478d804e6ccf56bb29f7f743f.bindPopup(popup_ffbc8f6825a3ec4b2eff3e29c15a8c60)
+        ;
+
+        
+    
+    
+            marker_f557a0c478d804e6ccf56bb29f7f743f.bindTooltip(
+                `<div>
+                     51: 10 Chelsea Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f557a0c478d804e6ccf56bb29f7f743f.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            var marker_501c29f25536b2ecb733b309952efb12 = L.marker(
+                [51.4681249, -2.5550703],
+                {
+}
+            ).addTo(feature_group_b7f109219c6cf6a95db78ab200947c88);
+        
+    
+        var popup_f439461f31b77981514e7dd07119a21a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e32ff640064a01cd5cc39afd7b28286e = $(`<div id="html_e32ff640064a01cd5cc39afd7b28286e" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 52: 102 Greenbank Road</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Geoffrey Harrison</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Residential</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 102 Greenbank Road, BS5 6HL</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Figurative painter specialising in portraiture, working from a home studio in Greenbank and on commissions and personal projects.</i></p>     </div>`)[0];
+                popup_f439461f31b77981514e7dd07119a21a.setContent(html_e32ff640064a01cd5cc39afd7b28286e);
+            
+        
+
+        marker_501c29f25536b2ecb733b309952efb12.bindPopup(popup_f439461f31b77981514e7dd07119a21a)
+        ;
+
+        
+    
+    
+            marker_501c29f25536b2ecb733b309952efb12.bindTooltip(
+                `<div>
+                     52: 102 Greenbank Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_501c29f25536b2ecb733b309952efb12.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            feature_group_b7f109219c6cf6a95db78ab200947c88.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+            var feature_group_830d04e2a4e64710533f8003a89cf177 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_91e20a87b355cde6df3db7297e9411b5 = L.marker(
+                [51.46563951, -2.556005371],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+            var icon_80905009f1704eca8c9be1a2a2720f93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "store",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e57ad2d373509c0374eeafdab024169 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1d5031496d7585cb8dc222575d299370 = $(`<div id="html_1d5031496d7585cb8dc222575d299370" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 5: Cafe 5</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Mim Best Jewellery</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 37A Gratitude Rd, BS5 6HH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Handcrafted contemporary jewellery exploring mark-making, pattern and texture. Silver sample sale and one-of-a-kind pieces.</i></p>     </div>`)[0];
+                popup_6e57ad2d373509c0374eeafdab024169.setContent(html_1d5031496d7585cb8dc222575d299370);
+            
+        
+
+        marker_91e20a87b355cde6df3db7297e9411b5.bindPopup(popup_6e57ad2d373509c0374eeafdab024169)
+        ;
+
+        
+    
+    
+            marker_91e20a87b355cde6df3db7297e9411b5.bindTooltip(
+                `<div>
+                     5: 37A Gratitude Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91e20a87b355cde6df3db7297e9411b5.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_06b606cbd993da68002cbc59890a5a5e = L.marker(
+                [51.4664147, -2.5644645],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_7d8830dd59683f7b5fee752efb702a59 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7910c47463510ee8032f7ae33f1a06bd = $(`<div id="html_7910c47463510ee8032f7ae33f1a06bd" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 12: No 12 Easton Cafe</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> -</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 12 High St, BS5 6DL</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 8am - 3pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 8am - 3pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Why not drop into the No 12 Cafe, pick up a trail booklet, plan your trail over a cup of coffee. There is always something going on at No 12.</i></p>     </div>`)[0];
+                popup_7d8830dd59683f7b5fee752efb702a59.setContent(html_7910c47463510ee8032f7ae33f1a06bd);
+            
+        
+
+        marker_06b606cbd993da68002cbc59890a5a5e.bindPopup(popup_7d8830dd59683f7b5fee752efb702a59)
+        ;
+
+        
+    
+    
+            marker_06b606cbd993da68002cbc59890a5a5e.bindTooltip(
+                `<div>
+                     12: 12 High St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06b606cbd993da68002cbc59890a5a5e.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_4e1fa0ec340554e858d3238c024d6f0d = L.marker(
+                [51.4664682, -2.5658856],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_684c801019d5e561de0ef63042e9f2c1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d19460b17a4823b840b1796a08b37b95 = $(`<div id="html_d19460b17a4823b840b1796a08b37b95" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 14: Radical Roasters</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Wildflower Cards</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 60-62 St. Mark’s Road, Easton, BS5 0LR</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 8:30am - 4pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 9am - 4pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>I make greeting cards and prints focusing on the dreamy exotic colour palette of a bygone era, using nostalgic landscapes.</i></p>     </div>`)[0];
+                popup_684c801019d5e561de0ef63042e9f2c1.setContent(html_d19460b17a4823b840b1796a08b37b95);
+            
+        
+
+        marker_4e1fa0ec340554e858d3238c024d6f0d.bindPopup(popup_684c801019d5e561de0ef63042e9f2c1)
+        ;
+
+        
+    
+    
+            marker_4e1fa0ec340554e858d3238c024d6f0d.bindTooltip(
+                `<div>
+                     14: 60-62 St. Mark’s Road, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e1fa0ec340554e858d3238c024d6f0d.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_14f759b9b7519536aed7a8cda0973cbc = L.marker(
+                [51.4679469, -2.5608757],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_7c4aaaf6b486aba7b073346bfe95a41c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_016993a2310cc978027af7b6b5c65df0 = $(`<div id="html_016993a2310cc978027af7b6b5c65df0" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 21: La Cubana</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> -</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 3 Greenbank Rd, BS5 6EZ</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 10am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 10am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>La Cubana is more than a café: a Cuban experience with authentic food, live music, culture and community, bringing the spirit of Havana to Easton.</i></p>     </div>`)[0];
+                popup_7c4aaaf6b486aba7b073346bfe95a41c.setContent(html_016993a2310cc978027af7b6b5c65df0);
+            
+        
+
+        marker_14f759b9b7519536aed7a8cda0973cbc.bindPopup(popup_7c4aaaf6b486aba7b073346bfe95a41c)
+        ;
+
+        
+    
+    
+            marker_14f759b9b7519536aed7a8cda0973cbc.bindTooltip(
+                `<div>
+                     21: 3 Greenbank Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14f759b9b7519536aed7a8cda0973cbc.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_8421b87c815e79532535bb4dad660f19 = L.marker(
+                [51.4667545, -2.5612614],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_e050393f7478533fe347917f8872a4d6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9e5ff2ba16f776dac2eb27a5dc27d5cc = $(`<div id="html_9e5ff2ba16f776dac2eb27a5dc27d5cc" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 23: BAM Store & Space</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Various</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 104-108 Belle Vue Rd, BS5 6BX</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 10am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 4pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Local independent hub for homegrown art, ceramics, jewellery, books, toys and gifts; free creative workshop.</i></p>     </div>`)[0];
+                popup_e050393f7478533fe347917f8872a4d6.setContent(html_9e5ff2ba16f776dac2eb27a5dc27d5cc);
+            
+        
+
+        marker_8421b87c815e79532535bb4dad660f19.bindPopup(popup_e050393f7478533fe347917f8872a4d6)
+        ;
+
+        
+    
+    
+            marker_8421b87c815e79532535bb4dad660f19.bindTooltip(
+                `<div>
+                     23: 104-108 Belle Vue Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8421b87c815e79532535bb4dad660f19.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_e923ba23ec8abc31a81c75c8bc25fb6c = L.marker(
+                [51.4661229, -2.5606966],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_01920ed914831acd3a132022ae72f34d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_09f57b03fce1be46a73d66addde74002 = $(`<div id="html_09f57b03fce1be46a73d66addde74002" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 24: The House of Praise</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> -</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 2 Tudor Rd, Easton, BS5 6BW</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 12pm - ?</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 12pm - ?</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Various events in and around the Church of God of Prophecy - House of Praise, including paintings and mixed media. Tudor Road Street Party on Sunday 6 September from 12pm.</i></p>     </div>`)[0];
+                popup_01920ed914831acd3a132022ae72f34d.setContent(html_09f57b03fce1be46a73d66addde74002);
+            
+        
+
+        marker_e923ba23ec8abc31a81c75c8bc25fb6c.bindPopup(popup_01920ed914831acd3a132022ae72f34d)
+        ;
+
+        
+    
+    
+            marker_e923ba23ec8abc31a81c75c8bc25fb6c.bindTooltip(
+                `<div>
+                     24: 2 Tudor Rd, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e923ba23ec8abc31a81c75c8bc25fb6c.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_d0f80dfb610a209e87fa53a17fc8a4b1 = L.marker(
+                [51.4593201, -2.5553934],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_ea19bf9a68860a48167a99d6d738365e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_20086a4c3487cc32a2f2798f9d1fe500 = $(`<div id="html_20086a4c3487cc32a2f2798f9d1fe500" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 30: Born In Bristol</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Bisou; en. Japan Craft</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 197 Church Rd, Redfield, BS5 9HG</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 10am - 4pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 3pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Bisou — colourful handmade polymer-clay jewellery inspired by nature, shapes and textures. en. Japan Craft — hand-folded origami jewellery and paper art made in Bristol using Japanese-inspired folding techniques.</i></p>     </div>`)[0];
+                popup_ea19bf9a68860a48167a99d6d738365e.setContent(html_20086a4c3487cc32a2f2798f9d1fe500);
+            
+        
+
+        marker_d0f80dfb610a209e87fa53a17fc8a4b1.bindPopup(popup_ea19bf9a68860a48167a99d6d738365e)
+        ;
+
+        
+    
+    
+            marker_d0f80dfb610a209e87fa53a17fc8a4b1.bindTooltip(
+                `<div>
+                     30: 197 Church Rd, Redfield
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0f80dfb610a209e87fa53a17fc8a4b1.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_655f0f8421bb9a78e615a0576b00daaf = L.marker(
+                [51.4591456, -2.5548282],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_19502ba17c8369f8ee1a26bfff4e8dd4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dd94a5fd138a09046f65bc290d069e4f = $(`<div id="html_dd94a5fd138a09046f65bc290d069e4f" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 31: Prior Shop</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Various</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 136 Church Rd, BS5 9HH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 10am - 6pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 4pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Independent makers’ shop stocking unique products not found elsewhere nearby, connecting independent makers with Bristol’s market.</i></p>     </div>`)[0];
+                popup_19502ba17c8369f8ee1a26bfff4e8dd4.setContent(html_dd94a5fd138a09046f65bc290d069e4f);
+            
+        
+
+        marker_655f0f8421bb9a78e615a0576b00daaf.bindPopup(popup_19502ba17c8369f8ee1a26bfff4e8dd4)
+        ;
+
+        
+    
+    
+            marker_655f0f8421bb9a78e615a0576b00daaf.bindTooltip(
+                `<div>
+                     31: 136 Church Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_655f0f8421bb9a78e615a0576b00daaf.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_3dca98cb0b0f6b775e5aca218d66b734 = L.marker(
+                [51.4594589, -2.5523157],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_7614a3360de1939213aac19f84c10aab = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fe31435935095e66b414c7b04a5b4055 = $(`<div id="html_fe31435935095e66b414c7b04a5b4055" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 33: The Dark Horse</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Various</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 172-174 Church Rd, BS5 9HX</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 12:30pm - 2am</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 12:30pm - 11pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Independent pub with roof terrace and events space; walls display works by a variety of local artists.</i></p>     </div>`)[0];
+                popup_7614a3360de1939213aac19f84c10aab.setContent(html_fe31435935095e66b414c7b04a5b4055);
+            
+        
+
+        marker_3dca98cb0b0f6b775e5aca218d66b734.bindPopup(popup_7614a3360de1939213aac19f84c10aab)
+        ;
+
+        
+    
+    
+            marker_3dca98cb0b0f6b775e5aca218d66b734.bindTooltip(
+                `<div>
+                     33: 172-174 Church Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dca98cb0b0f6b775e5aca218d66b734.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_a8cc756c87b2db8f7dcd212f1af1062a = L.marker(
+                [51.4596226, -2.5468066],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_fd67ce787b5d7dc9f5d33acae19a0241 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e935c9a8be83df9b7a5713e81b04ea01 = $(`<div id="html_e935c9a8be83df9b7a5713e81b04ea01" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 34: The Pickled Parrot</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Various</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 280 Church Rd, St. George, BS5 8AH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 4pm - 10:45pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 4am - 9pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Local artists display artwork for sale; for the trail, collaborating with Hidden Temple to display more artwork and T-shirts with artwork.</i></p>     </div>`)[0];
+                popup_fd67ce787b5d7dc9f5d33acae19a0241.setContent(html_e935c9a8be83df9b7a5713e81b04ea01);
+            
+        
+
+        marker_a8cc756c87b2db8f7dcd212f1af1062a.bindPopup(popup_fd67ce787b5d7dc9f5d33acae19a0241)
+        ;
+
+        
+    
+    
+            marker_a8cc756c87b2db8f7dcd212f1af1062a.bindTooltip(
+                `<div>
+                     34: 280 Church Rd, St. George
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8cc756c87b2db8f7dcd212f1af1062a.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            var marker_6dffe2800e77494627f110cf65574d48 = L.marker(
+                [51.45965486, -2.546907495],
+                {
+}
+            ).addTo(feature_group_830d04e2a4e64710533f8003a89cf177);
+        
+    
+        var popup_0cc4c4a41f3426f8d7324d27b041615a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_efdfe6011f6968ec93ad658799d83fa5 = $(`<div id="html_efdfe6011f6968ec93ad658799d83fa5" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 50: Niche BS5</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> -</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Hub / Shop / Exhibit</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 278 Church Rd, BS5 8AH</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 10am - 1pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> - - -</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Framing/shop venue; visitors can pick up an Art Trail map and receive 10% off framing with the map.</i></p>     </div>`)[0];
+                popup_0cc4c4a41f3426f8d7324d27b041615a.setContent(html_efdfe6011f6968ec93ad658799d83fa5);
+            
+        
+
+        marker_6dffe2800e77494627f110cf65574d48.bindPopup(popup_0cc4c4a41f3426f8d7324d27b041615a)
+        ;
+
+        
+    
+    
+            marker_6dffe2800e77494627f110cf65574d48.bindTooltip(
+                `<div>
+                     50: 278 Church Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dffe2800e77494627f110cf65574d48.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            feature_group_830d04e2a4e64710533f8003a89cf177.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+            var feature_group_ab52ac2920362a07e4be80e6dd2b139f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f20a251895088a087596eeabda469500 = L.marker(
+                [51.46852487, -2.557056591],
+                {
+}
+            ).addTo(feature_group_ab52ac2920362a07e4be80e6dd2b139f);
+        
+    
+            var icon_866d1c904827a139deb516283cf69e68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "users",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e757bf66da8bb3077b7309eca369129d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1302d886b6572d8fdd6632cd4b63a600 = $(`<div id="html_1302d886b6572d8fdd6632cd4b63a600" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 8: St Anne’s Church</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Cassie Billings Art; Dona B Drawings; Emma Lucy McArthur Art; Emmmakes; Handmade With Love Bristol; Jim Reynolds; Lizzie Adsett Photography; Lucy Baik; Noo Prints 3D; The House of Dead Birds; Trym Woodcraft</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Community</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> St Anne’s Church, St Leonard’s Rd, Eastville, BS5 6JN</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Cassie Billings Art — paintings and prints inspired by walks through green spaces in and around Bristol, including work on reclaimed wood and paper. Dona B Drawings — hand-drawn and digital illustrations of memorable Bristol places in prints, gifts and homewares. Emma Lucy McArthur Art — lino prints and drawings inspired by anatomy and its patterns. Emmmakes — offbeat illustrations inspired by shared human quirks, food and everyday oddity. Handmade With Love Bristol — colourful jewellery, resin craft, embroidery and needle felt, including personalised jewellery. Jim Reynolds — hand made leather items. Lizzie Adsett Photography — landscape photography, prints, photobooks and zines, plus small woven sculptures from natural materials. Lucy Baik — original hand-carved and hand-printed linocut artworks. Noo Prints 3D — affordable creative 3D prints for imaginative play and sensory opportunities. The House of Dead Birds — mixed media and digital prints by Alex Spence, exploring seasonal landscapes, changing light, weather and climate catastrophe. Trym Woodcraft — decorative, practical and tactile turned-wood objects using recycled wood and fallen branches.</i></p>     </div>`)[0];
+                popup_e757bf66da8bb3077b7309eca369129d.setContent(html_1302d886b6572d8fdd6632cd4b63a600);
+            
+        
+
+        marker_f20a251895088a087596eeabda469500.bindPopup(popup_e757bf66da8bb3077b7309eca369129d)
+        ;
+
+        
+    
+    
+            marker_f20a251895088a087596eeabda469500.bindTooltip(
+                `<div>
+                     8: St Anne’s Church, St Leonard’s Rd, Eastville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f20a251895088a087596eeabda469500.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+            var marker_ae1cdd1d3ccb90855ac89ff4c3b69542 = L.marker(
+                [51.46750615, -2.564748401],
+                {
+}
+            ).addTo(feature_group_ab52ac2920362a07e4be80e6dd2b139f);
+        
+    
+        var popup_1589fedee76be7ea7610a0469cb0d060 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c29271ff2ff0f86fa0c456d6e01659c0 = $(`<div id="html_c29271ff2ff0f86fa0c456d6e01659c0" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 17: St Mark’s Baptist Church</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Art-K; Chika Chika; Craftyarty; K Creates; Martyna Grądziel; Purple Moon by Jules</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Community</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> St Mark’s Baptist Church, St Marks Rd, BS5 6HX</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 12:30pm - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Art-K — art studio providing classes for children and adults, focused on nurturing creativity and confidence. Chika Chika — bold handmade jewellery and festival fashion. Craftyarty — mosaics using crockery, tiles, glass and found objects. K Creates — handmade crochet pieces including bags, key chains and clothes. Martyna Grądziel — colourful work combining drawing, printmaking and collage across illustration, ceramics, textiles and murals. Purple Moon by Jules — hand-crafted stained glass inspired by nature, plus jewellery.</i></p>     </div>`)[0];
+                popup_1589fedee76be7ea7610a0469cb0d060.setContent(html_c29271ff2ff0f86fa0c456d6e01659c0);
+            
+        
+
+        marker_ae1cdd1d3ccb90855ac89ff4c3b69542.bindPopup(popup_1589fedee76be7ea7610a0469cb0d060)
+        ;
+
+        
+    
+    
+            marker_ae1cdd1d3ccb90855ac89ff4c3b69542.bindTooltip(
+                `<div>
+                     17: St Mark’s Baptist Church, St Marks Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae1cdd1d3ccb90855ac89ff4c3b69542.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+            var marker_7e687dfdebe6f521ade17d9c2be9b2ee = L.marker(
+                [51.4667545, -2.5612614],
+                {
+}
+            ).addTo(feature_group_ab52ac2920362a07e4be80e6dd2b139f);
+        
+    
+        var popup_a348d357c08f94eed2c207b8a9e09321 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ee57192d639141dd018944e2dc2241ba = $(`<div id="html_ee57192d639141dd018944e2dc2241ba" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 20: The Greenbank Pub</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Fellow Designs; George Dawes; Kelly’s Kwerkies; Made By Lucy; Page of Pens; Pixy-led; The Women Who Built Bristol; Sam Hall</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Community</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> 57 Belle Vue Rd, Easton, BS5 6DP</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 12am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 12am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Fellow Designs — sculptural art pieces highlighting the natural beauty of wood. George Dawes — environmentally friendly photographic-practice guides and prints made via processes described in the book. Kelly’s Kwerkies — upcycled clothing/textiles made into bags and home decorations, plus crocheted accessories. Made By Lucy — unusual affordable cards, gifts and treats. Page of Pens — mixed-media work using words, ink, paint and brushes, inspired by magic, mythology and nature. Pixy-led — digital illustration and linocut prints inspired by nature, folklore and spooky/whimsical themes. The Women Who Built Bristol — Bristol history books highlighting overlooked women from the city’s past. Sam Hall — detailed pencil drawings representing animal collective nouns.</i></p>     </div>`)[0];
+                popup_a348d357c08f94eed2c207b8a9e09321.setContent(html_ee57192d639141dd018944e2dc2241ba);
+            
+        
+
+        marker_7e687dfdebe6f521ade17d9c2be9b2ee.bindPopup(popup_a348d357c08f94eed2c207b8a9e09321)
+        ;
+
+        
+    
+    
+            marker_7e687dfdebe6f521ade17d9c2be9b2ee.bindTooltip(
+                `<div>
+                     20: 57 Belle Vue Rd, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e687dfdebe6f521ade17d9c2be9b2ee.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+            var marker_4f21fdb675f59ea0f03affbe022a2ed8 = L.marker(
+                [51.45441343, -2.564232723],
+                {
+}
+            ).addTo(feature_group_ab52ac2920362a07e4be80e6dd2b139f);
+        
+    
+        var popup_0ec222c23c9430bdccef8fd53f96a48a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fd0fe428fa7bca027f67b4a969aa95bf = $(`<div id="html_fd0fe428fa7bca027f67b4a969aa95bf" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 28: St. Luke’s Church</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Caroline Temple-Bird; David Mowat Art; Grace Ruddick; Josh Gabbatiss; Palestine Museum & Cultural Centre; Proper Job; Tanya Voronina</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Community</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> St. Luke’s Church, Church Street, Barton Hill, BS5 9FB</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Caroline Temple-Bird — vibrant paintings, originals, Giclée prints, cards and products displaying her art. David Mowat Art — plein-air watercolours of urban/rural landscapes. Grace Ruddick — self-taught oil painter focused mainly on the British landscape. Josh Gabbatiss — animal and natural-world printmaker, including Bristol urban wildlife, mainly etchings and linocuts. Palestine Museum & Cultural Centre — explores Palestinian culture, heritage and daily life and sells Palestinian-made products. Proper Job — prints, coasters, magnets, tea towels, peg hooks, cards and mugs (Sunday only). Tanya Voronina — watercolour paintings, prints and cards.</i></p>     </div>`)[0];
+                popup_0ec222c23c9430bdccef8fd53f96a48a.setContent(html_fd0fe428fa7bca027f67b4a969aa95bf);
+            
+        
+
+        marker_4f21fdb675f59ea0f03affbe022a2ed8.bindPopup(popup_0ec222c23c9430bdccef8fd53f96a48a)
+        ;
+
+        
+    
+    
+            marker_4f21fdb675f59ea0f03affbe022a2ed8.bindTooltip(
+                `<div>
+                     28: St. Luke’s Church, Church Street, Barton Hill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f21fdb675f59ea0f03affbe022a2ed8.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+            var marker_f0754d28acbbf247f06b8dbe4c5559fe = L.marker(
+                [51.46331917, -2.550290679],
+                {
+}
+            ).addTo(feature_group_ab52ac2920362a07e4be80e6dd2b139f);
+        
+    
+        var popup_f25cea84142c231440a41e2997d0a736 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_02ca5c3702cf1136e37300d649b2f53b = $(`<div id="html_02ca5c3702cf1136e37300d649b2f53b" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 42: St Ambrose Whitehall Church</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Air Land Sea Glass; Books and Prints by Cathey; Bugs & Leaves Copper Craft; Chris Lynas; Creative Space; Emma Philippa Maeve; Lottie Draws Design; Naomi Rusher Art; Oliver Woods Art & Creativity; Orlange Juice; The Tangled Tails; unsui; Verity Lynas</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Community</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> St Ambrose with St Leonard, Stretford Ave, BS5 7AN</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 12:30pm - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Air Land Sea Glass — glass artworks inspired by nature and pets. Books and Prints by Cathey — handmade/hand-printed books, cards and prints using linocut, woodcut and letterpress. Bugs & Leaves Copper Craft — nature-inspired designs from recycled electrical cables. Chris Lynas — pen-plotter art using a 3D-printed open-source plotter, representing photographs through line drawings. Creative Space — craft studio offering workshops/courses for adults and children (Sunday only). Emma Philippa Maeve — applied arts, mixed media and accessories inspired by music, scenery, colour and travel. Lottie Draws Design — intricate hand-printed lino and other printmaking inspired by fantasy, folklore, nature and astronomy. Naomi Rusher Art — vibrant ethereal abstract paintings inspired by ocean waves, stars and nature. Oliver Woods Art & Creativity — mixed-media ‘Community Networks?’ tabletop exhibition combining mushroom art with a community-networks theme (Saturday only). Orlange Juice — vibrant illustrations based on journal entries around nature, neurodivergence and mental health. The Tangled Tails — upcycled/found-object craft from furniture, shells, jars and boxes. unsui — Japanese kimono, obi and discontinued fabrics turned into bags and small treasures. Verity Lynas — ink and line-work creatures inspired by microscopic life, with original artworks, badges and stickers.</i></p>     </div>`)[0];
+                popup_f25cea84142c231440a41e2997d0a736.setContent(html_02ca5c3702cf1136e37300d649b2f53b);
+            
+        
+
+        marker_f0754d28acbbf247f06b8dbe4c5559fe.bindPopup(popup_f25cea84142c231440a41e2997d0a736)
+        ;
+
+        
+    
+    
+            marker_f0754d28acbbf247f06b8dbe4c5559fe.bindTooltip(
+                `<div>
+                     42: St Ambrose with St Leonard, Stretford Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0754d28acbbf247f06b8dbe4c5559fe.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+            feature_group_ab52ac2920362a07e4be80e6dd2b139f.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+            var feature_group_36a5414b6c0f2761e2a6a96f20b548b7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_27670fb7afba6276e75a836c955004e2 = L.marker(
+                [51.46802857, -2.562703173],
+                {
+}
+            ).addTo(feature_group_36a5414b6c0f2761e2a6a96f20b548b7);
+        
+    
+            var icon_ac096430943c45540a7e1461cdab33ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "paint-brush",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cca102bdd28804fbf5b3529c3d39e06e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d0d5dcebcfdf5097dec72cc322dc2e99 = $(`<div id="html_d0d5dcebcfdf5097dec72cc322dc2e99" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 9: Mivart Studios</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Gemma Brothers; Kay Morgan; Hannah Broadway</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> Mivart Studios, Cato Street, Easton, BS5 6JL</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Gemma Brothers: ceramic artist. Kay Morgan: maker of vibrant reclaimed leather jewellery. Hannah Broadway: artist creating uplifting illustrations.</i></p>     </div>`)[0];
+                popup_cca102bdd28804fbf5b3529c3d39e06e.setContent(html_d0d5dcebcfdf5097dec72cc322dc2e99);
+            
+        
+
+        marker_27670fb7afba6276e75a836c955004e2.bindPopup(popup_cca102bdd28804fbf5b3529c3d39e06e)
+        ;
+
+        
+    
+    
+            marker_27670fb7afba6276e75a836c955004e2.bindTooltip(
+                `<div>
+                     9: Mivart Studios, Cato Street, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27670fb7afba6276e75a836c955004e2.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            var marker_bfd9eaac00b6c1ab1a40887c490854b6 = L.marker(
+                [51.46726405, -2.565057663],
+                {
+}
+            ).addTo(feature_group_36a5414b6c0f2761e2a6a96f20b548b7);
+        
+    
+        var popup_ca8f4e2ad29cf159cf95dd03dd8128b9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_81425b5fe729bb2a31c571d780728487 = $(`<div id="html_81425b5fe729bb2a31c571d780728487" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 16: The Yard</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Ianthe; Imogen Robins</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> The Yard, 53 St Mark’s Rd, Easton, BS5 6HX</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Ianthe — spray paint, acrylics and marker pen on canvas, inspired by nature and colour; one-off unique pieces. Imogen Robins — needle-felted pictures form the core of the exhibition, alongside other styles and media of art for sale at half price.</i></p>     </div>`)[0];
+                popup_ca8f4e2ad29cf159cf95dd03dd8128b9.setContent(html_81425b5fe729bb2a31c571d780728487);
+            
+        
+
+        marker_bfd9eaac00b6c1ab1a40887c490854b6.bindPopup(popup_ca8f4e2ad29cf159cf95dd03dd8128b9)
+        ;
+
+        
+    
+    
+            marker_bfd9eaac00b6c1ab1a40887c490854b6.bindTooltip(
+                `<div>
+                     16: The Yard, 53 St Mark’s Rd, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bfd9eaac00b6c1ab1a40887c490854b6.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            var marker_89dfbfce915a602c07d62ca74c53914d = L.marker(
+                [51.46831493, -2.562572685],
+                {
+}
+            ).addTo(feature_group_36a5414b6c0f2761e2a6a96f20b548b7);
+        
+    
+        var popup_2436d0de6a672df5c3518955ed00fd0e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_526eb1d35dc9793f640932f1fffab424 = $(`<div id="html_526eb1d35dc9793f640932f1fffab424" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 18: Mivart Street Studios</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Antler Wildling Illustration; Aumairah Artist; Ayesha Pearce; Cath O’Leary; Ceinwen Birrell; Dixon Does Doodles; Genevieve Cameo; Karen Davies; Laura Downing - Creep Mother; Pilar Cortes; Polkadot Studio; Rob Elgar Art; Robert Mills; Rosanna Morris; Sky Siouki; The Fever Few Clothing; Zubieta</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> Mivart Street Studios, Mivart Street, Easton, BS5 6JF</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Antler Wildling Illustration — illustrations and 3D pieces. Aumairah Artist — colourful, cultural mixed-media art, making and murals featuring geometric patterns and Arabic calligraphy. Ayesha Pearce — bold oil paintings focused on colour and composition. Cath O’Leary — mixed media influenced by coast, thoughts, materials and monsters. Ceinwen Birrell — paintings blending everyday life with the otherworldly, folklore and nature. Dixon Does Doodles — dinosaurs, monsters, animals, zombies and more. Genevieve Cameo — multidisciplinary artist, performer, producer and facilitator; playful, sensory and collaborative work. Karen Davies — ‘Lost in the Forest’ printmaking experiments. Laura Downing / Creep Mother — mixed-media analogue and digital collage including hand embroidery. Pilar Cortes — landscape and abstract painting exploring dense green overgrowth and shifting light. Polkadot Studio — paintings, prints, tribal, abstract, geometric and cut-outs. Rob Elgar Art — studio and plein-air oil landscapes of countryside, woodlands and UK coastline. Robert Mills — figurative paintings and artist’s books concerning dreams, stories, politics and myth. Rosanna Morris — Bristol linocuts inspired by land, food, seasons and community. Sky Siouki — ethereal, dreamlike abstract paintings rooted in nature and the forest. The Fever Few Clothing — womenswear designed as elevated, long-lasting everyday garments. Zubieta — brightly coloured surrealist work exploring pop culture, social media, psychedelia and nature.</i></p>     </div>`)[0];
+                popup_2436d0de6a672df5c3518955ed00fd0e.setContent(html_526eb1d35dc9793f640932f1fffab424);
+            
+        
+
+        marker_89dfbfce915a602c07d62ca74c53914d.bindPopup(popup_2436d0de6a672df5c3518955ed00fd0e)
+        ;
+
+        
+    
+    
+            marker_89dfbfce915a602c07d62ca74c53914d.bindTooltip(
+                `<div>
+                     18: Mivart Street Studios, Mivart Street, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89dfbfce915a602c07d62ca74c53914d.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            var marker_dd024e402ca394bcdb880b1c6a195b89 = L.marker(
+                [51.46810377, -2.563110918],
+                {
+}
+            ).addTo(feature_group_36a5414b6c0f2761e2a6a96f20b548b7);
+        
+    
+        var popup_b27eaf7c3bf62f3e4a50c8fb53f2d243 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_356a1f772349835775a440982acbb950 = $(`<div id="html_356a1f772349835775a440982acbb950" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 19: Garage Studios</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Adam Hughes; Anne Kotecha Illustration; Fruit Salad; Peski Studio; Safa Aslam</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> Garage Studios, Stanley Park, Easton, BS5 6DT</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Adam Hughes — documentary and nature photography plus creative doodlings. Anne Kotecha Illustration — children’s illustrations, prints and cards with bright colourful characters and abstract shapes. Fruit Salad — sustainable fashion and textile pieces by Emma Gorton-Ellicott, handmade from pre-loved fabrics and clothing. Peski Studio — book illustration, commissions, art and products inspired by vintage graphic design, animation and the natural world. Safa Aslam — handmade linocuts and cards inspired by drawings documenting the artist’s life and travels.</i></p>     </div>`)[0];
+                popup_b27eaf7c3bf62f3e4a50c8fb53f2d243.setContent(html_356a1f772349835775a440982acbb950);
+            
+        
+
+        marker_dd024e402ca394bcdb880b1c6a195b89.bindPopup(popup_b27eaf7c3bf62f3e4a50c8fb53f2d243)
+        ;
+
+        
+    
+    
+            marker_dd024e402ca394bcdb880b1c6a195b89.bindTooltip(
+                `<div>
+                     19: Garage Studios, Stanley Park, Easton
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd024e402ca394bcdb880b1c6a195b89.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            var marker_146e66e3813a593bb277773686d5784e = L.marker(
+                [51.4603229, -2.568168732],
+                {
+}
+            ).addTo(feature_group_36a5414b6c0f2761e2a6a96f20b548b7);
+        
+    
+        var popup_fb3b916a60a420a9f1cce4f318ff9438 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1393cb632abc55fee654f1e5664a7051 = $(`<div id="html_1393cb632abc55fee654f1e5664a7051" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 27: Easton Road Studios</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Amy Hutchings; Antonia Ramsey; Colourful Minds; Joanna Witecka (good.creature.pt); Lizzi Mann; Martin Rieser</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> Easton Road Studios, UNIT 11 CIRCUIT, 32 Easton Rd, BS5 0DB</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Amy Hutchings — vibrant-colour artist, muralist and printmaker. Antonia Ramsey — cardboard and spray-paint puppets, props and costumes for carnivals, events and installations. Colourful Minds — art workshops for all ages. Joanna Witecka — multidisciplinary artist/maker whose work centres on contemporary folklore and weird little creatures. Lizzi Mann — hand-woven textiles and plant-dyed fabrics. Martin Rieser — acrylic paintings, bas-reliefs and prints.</i></p>     </div>`)[0];
+                popup_fb3b916a60a420a9f1cce4f318ff9438.setContent(html_1393cb632abc55fee654f1e5664a7051);
+            
+        
+
+        marker_146e66e3813a593bb277773686d5784e.bindPopup(popup_fb3b916a60a420a9f1cce4f318ff9438)
+        ;
+
+        
+    
+    
+            marker_146e66e3813a593bb277773686d5784e.bindTooltip(
+                `<div>
+                     27: Easton Road Studios, UNIT 11 CIRCUIT, 32 Easton Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_146e66e3813a593bb277773686d5784e.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            var marker_b32c9e68735deb6292f136dc6ff05d0a = L.marker(
+                [51.45314662, -2.562292198],
+                {
+}
+            ).addTo(feature_group_36a5414b6c0f2761e2a6a96f20b548b7);
+        
+    
+        var popup_cb1e7665524c5a78b1ccbeabc938d1ba = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_81b99e77bd404ec2dc9e3cae362d1bdb = $(`<div id="html_81b99e77bd404ec2dc9e3cae362d1bdb" style="width: 100.0%; height: 100.0%;">     <p style="font-family:sans-serif; margin:0; font-size:1.6rem;"><b>Venue 29: In Bristol Studios</b></p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Artist:</b> Alastair Burgess; Calum McCutcheon; Elliot Coffin; Emma Jean Kemp; Florence Meadows; Jess Hellens; Kathryn Stevens; Lost Sound Project; Pure Form Jewellery; Studio Meraki; Tom Colebrook</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Category:</b> Studio</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Address:</b> In Bristol Studios, Great Western Lane, BS5 9BB</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sat:</b> 11am - 5pm</p>     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><b>Sun:</b> 11am - 5pm</p>     <hr style="margin:5px 0;">     <p style="font-family:sans-serif; margin:0; font-size:1.4rem;"><i>Alastair Burgess — sculptor and metalsmith working in metals and mixed materials. Calum McCutcheon — multidisciplinary painting and installation exploring chaos and control. Elliot Coffin — print, sculpture and collage using found materials, texture and layered imagery. Emma Jean Kemp — bronze/steel sculpture and expressive prints exploring human experience and movement. Florence Meadows — printmaker using photomechanical processes to capture light and shadow. Jess Hellens — dreamy abstract landscapes in metallics, acrylic and ink. Kathryn Stevens — oil paintings using texture, colour and layers to evoke mystery and imagination. Lost Sound Project — immersive participatory sound installation using sampling machines and studio FX. Pure Form Jewellery — handmade silver jewellery from a garden studio. Studio Meraki — artist-led collective focused on community co-design, public art and place-making, with free workshops. Tom Colebrook — haptic, hand-printed black-and-white photography from colour negatives.</i></p>     </div>`)[0];
+                popup_cb1e7665524c5a78b1ccbeabc938d1ba.setContent(html_81b99e77bd404ec2dc9e3cae362d1bdb);
+            
+        
+
+        marker_b32c9e68735deb6292f136dc6ff05d0a.bindPopup(popup_cb1e7665524c5a78b1ccbeabc938d1ba)
+        ;
+
+        
+    
+    
+            marker_b32c9e68735deb6292f136dc6ff05d0a.bindTooltip(
+                `<div>
+                     29: In Bristol Studios, Great Western Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b32c9e68735deb6292f136dc6ff05d0a.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            feature_group_36a5414b6c0f2761e2a6a96f20b548b7.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+            var layer_control_84c50d7fa2e4c5673e08be86f9ab6666_layers = {
+                base_layers : {
+                },
+                overlays :  {
+                    "Residential" : feature_group_b7f109219c6cf6a95db78ab200947c88,
+                    "Hub / Shop / Exhibit" : feature_group_830d04e2a4e64710533f8003a89cf177,
+                    "Community" : feature_group_ab52ac2920362a07e4be80e6dd2b139f,
+                    "Studio" : feature_group_36a5414b6c0f2761e2a6a96f20b548b7,
+                },
+            };
+            let layer_control_84c50d7fa2e4c5673e08be86f9ab6666 = L.control.layers(
+                layer_control_84c50d7fa2e4c5673e08be86f9ab6666_layers.base_layers,
+                layer_control_84c50d7fa2e4c5673e08be86f9ab6666_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_13caa042e06f007057b0e50847d7ba12);
+
+        
+    
+            map_13caa042e06f007057b0e50847d7ba12.fitBounds(
+                [[51.451546619999995, -2.5712490999999997], [51.47012487000001, -2.5348059000000003]],
+                {}
+            );
+        
+    
+            tile_layer_1a798bf1465cdb97d1fc2a5da7d2384a.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+                marker_4fa2b97a4a45c4fe91c451e4035aceba.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_4ef16c15d166b062a4a4ab96aa068225.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_fbd73b60029ff172a6970edcff8d11bb.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_2a3969ff4cf7a6bc4f6ae8e41d57e49c.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_e45775ebff9c8808378b9da13e12ba81.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_14b9275a3145fe213f00ac2b7514822f.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_4c5abe44ebf1c4c504d7f9f1354b3d0a.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_e65d8827259e7ce20b7e1e84987f402e.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_29f8ba14899d9b34f6c738db5bda7858.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_408131cc12c02e8ec3961a20611b8e9d.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_fe3b769aa3f655c6c63afdb18d729192.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_aaa5793d9ef9a16b9311975e106d72a5.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_79dfec6a4fd7536c07dbb36e90c01457.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_9c3aabe54f14d343d483dce37f003e2c.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_462a4c2eecf8924c93b1e6ccf2db0ae9.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_b4589f7914a8fe0540fcfde326ed30d7.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_98729d329e26e3b885741b85b18c51d2.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_952cd24b6155e27ea43487836d83e980.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_ddb81434c4cf51e280516b5f21f3a750.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_2954a9a7a021ab5d1ce908d528a283c8.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_f1c937bf1716f3becfc4ff6eb630c571.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_8573e6ed469c9ea72e3ce8d7296ff95d.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_90859581984e502988889921c7262cbd.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_5d4580c1401f390fbdae59bac757c509.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_a59951e8343911b17a0a2e9b7df759d9.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_c0710c72ca45a38d1b5916891f54448f.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_87fc5685a82d3c5510a311a2eb0aef4e.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_d843f8bcaf0ea65b97cc104cf00f9509.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_f557a0c478d804e6ccf56bb29f7f743f.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+                marker_501c29f25536b2ecb733b309952efb12.setIcon(icon_d9a59e0ec140ca0c389ea0bcb921bad9);
+            
+    
+            feature_group_b7f109219c6cf6a95db78ab200947c88.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+                marker_91e20a87b355cde6df3db7297e9411b5.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_06b606cbd993da68002cbc59890a5a5e.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_4e1fa0ec340554e858d3238c024d6f0d.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_14f759b9b7519536aed7a8cda0973cbc.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_8421b87c815e79532535bb4dad660f19.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_e923ba23ec8abc31a81c75c8bc25fb6c.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_d0f80dfb610a209e87fa53a17fc8a4b1.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_655f0f8421bb9a78e615a0576b00daaf.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_3dca98cb0b0f6b775e5aca218d66b734.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_a8cc756c87b2db8f7dcd212f1af1062a.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+                marker_6dffe2800e77494627f110cf65574d48.setIcon(icon_80905009f1704eca8c9be1a2a2720f93);
+            
+    
+            feature_group_830d04e2a4e64710533f8003a89cf177.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+                marker_f20a251895088a087596eeabda469500.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+                marker_ae1cdd1d3ccb90855ac89ff4c3b69542.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+                marker_7e687dfdebe6f521ade17d9c2be9b2ee.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+                marker_4f21fdb675f59ea0f03affbe022a2ed8.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+                marker_f0754d28acbbf247f06b8dbe4c5559fe.setIcon(icon_866d1c904827a139deb516283cf69e68);
+            
+    
+            feature_group_ab52ac2920362a07e4be80e6dd2b139f.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+    
+                marker_27670fb7afba6276e75a836c955004e2.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+                marker_bfd9eaac00b6c1ab1a40887c490854b6.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+                marker_89dfbfce915a602c07d62ca74c53914d.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+                marker_dd024e402ca394bcdb880b1c6a195b89.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+                marker_146e66e3813a593bb277773686d5784e.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+                marker_b32c9e68735deb6292f136dc6ff05d0a.setIcon(icon_ac096430943c45540a7e1461cdab33ed);
+            
+    
+            feature_group_36a5414b6c0f2761e2a6a96f20b548b7.addTo(map_13caa042e06f007057b0e50847d7ba12);
+        
+</script>
+</html>
